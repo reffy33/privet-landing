@@ -10,7 +10,7 @@ export default function AppInYourLanguage() {
         <h3>Приложение на вашем языке</h3>
         <p>Приложение переведено на 3 языка: английский, китайский, арабский</p>
       </div>
-      <div className="flex gap-10">
+      <div className="flex max-2xl:flex-col items-center gap-10">
         <img src={en} alt="" />
         <img src={ch} alt="" />
         <img src={ar} alt="" />

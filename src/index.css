@@ -4,6 +4,12 @@
 @theme {
   --color-primary-yellow: #fdd142;
   --color-black-text: #3d3d3d;
+
+  --breakpoint-3xl: 1400px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-lg: 768px;
+  --breakpoint-md: 480px;
+  --breakpoint-sm: 320px;
 }
 
 :root {
@@ -14,10 +20,6 @@
   font-weight: 400;
 }
 
-body {
-  @apply text-black-text text-[28px];
-}
-
 .roboto {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -26,9 +28,11 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
+body,
 a {
-  @apply text-black-text text-[28px];
+  @apply text-black-text text-[28px] max-lg:text-[24px] max-md:text-[20px];
 }
+
 a:hover {
   @apply underline;
 }
@@ -47,17 +51,8 @@ body {
   min-height: 100vh;
   background: url("./assets/background.png");
 }
-
-button {
-}
-button:hover {
-}
-button:focus,
-button:focus-visible {
-}
-
 .container {
-  @apply max-w-420 m-auto;
+  @apply max-w-420 m-auto max-[1720px]:px-10 max-lg:px-5;
 }
 
 footer a {
@@ -76,12 +71,17 @@ button {
   @apply rounded-[64px] py-3 w-full text-[20px] text-[#04061F] bg-primary-yellow;
 }
 
-button:hover {
+button:hover,
+.btn-secondary:hover {
   @apply bg-[#dfb93b] cursor-pointer ease-linear duration-300;
 }
 
 button:disabled {
   @apply bg-[#CBCBCB] text-white;
+}
+
+.btn-secondary {
+  @apply bg-white border-2 border-primary-yellow rounded-[64px] py-3 w-full text-[20px] text-[#04061F] text-center;
 }
 
 .form-error {
