@@ -7,7 +7,7 @@ export default function InfoForYou() {
   return (
     <div className="space-y-20">
       <h3>Посмотрите информацию для вас</h3>
-      <div className="flex justify-between items-center [&_img]:h-65">
+      <div className="flex flex-wrap justify-between gap-2 max-2xl:gap-20 max-xl:gap-15 max-2xl:justify-center items-center [&_img]:h-65">
         <div className="w-112.5 flex flex-col gap-10 justify-center items-center">
           <img src={students} alt="" />
           <NavLink className="btn-secondary" to="/to_students">

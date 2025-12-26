@@ -38,7 +38,7 @@ export default function NavBar() {
       <div
         className={cn(
           "pb-2 pr-5 flex justify-end transition-ease duration-350 absolute bg-white w-screen z-10 top-14 opacity-0",
-          burgerOpen ? "opacity-100" : ""
+          burgerOpen ? "opacity-100" : "invisible"
         )}
       >
         <a href="https://privet-web-steel.vercel.app/">Веб-приложение ↗</a>
