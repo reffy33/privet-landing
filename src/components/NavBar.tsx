@@ -17,10 +17,10 @@ export default function NavBar() {
               <NavLink to="/">Главная</NavLink>
             </li>
             <li>
-              <NavLink to="/to_students">Студентам</NavLink>
+              <NavLink to="/students">Студентам</NavLink>
             </li>
             <li>
-              <NavLink to="/to_universities">Вузам</NavLink>
+              <NavLink to="/universities">Вузам</NavLink>
             </li>
             <li className="max-lg:hidden">
               <a href="https://privet-web-steel.vercel.app/">
@@ -37,8 +37,9 @@ export default function NavBar() {
       </nav>
       <div
         className={cn(
-          "pb-2 pr-5 flex justify-end transition-ease duration-350 absolute bg-white w-screen z-10 top-14 opacity-0",
-          burgerOpen ? "opacity-100" : "invisible"
+          "pb-2 pt-2 right-0 flex justify-end transition-ease duration-350 absolute bg-white w-screen z-10 top-18.25 max-md:top-14 max-sm:top-13 opacity-0",
+          burgerOpen ? "opacity-100" : "invisible",
+          "lg:hidden"
         )}
       >
         <a href="https://privet-web-steel.vercel.app/">Веб-приложение ↗</a>
