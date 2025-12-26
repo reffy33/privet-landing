@@ -9,7 +9,7 @@ export default function ToStudents() {
       <HomeBanner />
       <EasyLegalization />
       <AppInYourLanguage />
-      {/* <StudentForm /> */}
+      <StudentForm />
     </>
   );
 }

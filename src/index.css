@@ -9,7 +9,7 @@
   --breakpoint-xl: 1024px;
   --breakpoint-lg: 768px;
   --breakpoint-md: 480px;
-  --breakpoint-sm: 320px;
+  --breakpoint-sm: 376px;
 }
 
 :root {
@@ -29,8 +29,8 @@
 }
 
 body,
-a {
-  @apply text-black-text text-[28px] max-lg:text-[24px] max-md:text-[20px];
+a, label {
+  @apply text-black-text text-[28px] max-xl:text-[24px] max-lg:text-[20px] max-md:text-[16px];
 }
 
 a:hover {
@@ -60,15 +60,15 @@ footer a {
 }
 
 .input-group {
-  @apply flex flex-col gap-5.5 text-[24px];
+  @apply flex flex-col gap-5.5 max-md:gap-3 text-[24px];
 }
 
 input {
-  @apply border-[#C1C1C1] border rounded-[50px] py-2.5 px-5 text-[20px] placeholder:text-[#B8B8B8];
+  @apply border-[#C1C1C1] border rounded-[50px] py-2.5 px-5 text-[20px] max-md:text-[16px] placeholder:text-[#B8B8B8];
 }
 
 button {
-  @apply rounded-[64px] py-3 w-full text-[20px] text-[#04061F] bg-primary-yellow;
+  @apply rounded-[64px] py-3 w-full text-[20px] max-md:text-[16px] text-[#04061F] bg-primary-yellow;
 }
 
 button:hover,
@@ -86,4 +86,12 @@ button:disabled {
 
 .form-error {
   @apply text-[18px] text-red-500 pl-3;
+}
+
+.form-wrapper {
+  @apply bg-white px-10 max-md:px-5 py-15 max-md:py-6 rounded-2xl space-y-9;
+}
+
+.form-inputs {
+  @apply space-y-6 w-90 max-md:w-60;
 }

@@ -104,8 +104,8 @@ export default function StudentForm() {
   return (
     <div className="flex justify-center">
       <form onSubmit={handleSubmit}>
-        <div className="bg-white px-10 py-15 rounded-2xl space-y-9 ">
-          <div className="space-y-6 w-90">
+        <div className="form-wrapper">
+          <div className="form-inputs">
             <div className="input-group">
               <label htmlFor="name">Имя</label>
               <input
