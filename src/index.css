@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary-yellow: #fdd142;
+  --color-black-text: #3d3d3d;
+}
+
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+body {
+  @apply text-black-text text-[28px];
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+a {
+  @apply text-black-text text-[28px];
+}
+a:hover {
+  @apply underline;
+}
+
+h3 {
+  @apply text-black text-[36px] font-semibold;
+}
+
+h4 {
+  @apply text-black text-[30px] font-semibold;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url("./assets/background.png");
+}
+
+button {
+}
+button:hover {
+}
+button:focus,
+button:focus-visible {
+}
+
+.container {
+  @apply max-w-420 m-auto;
+}
+
+footer a {
+  @apply text-[24px];
+}
+
+.input-group {
+  @apply flex flex-col gap-5.5 text-[24px];
+}
+
+input {
+  @apply border-[#C1C1C1] border rounded-[50px] py-2.5 px-5 text-[20px] placeholder:text-[#B8B8B8];
+}
+
+button {
+  @apply rounded-[64px] py-3 w-full text-[20px] text-[#04061F] bg-primary-yellow;
+}
+
+button:hover {
+  @apply bg-[#dfb93b] cursor-pointer ease-linear duration-300;
+}
+
+button:disabled {
+  @apply bg-[#CBCBCB] text-white;
+}
+
+.form-error {
+  @apply text-[18px] text-red-500 pl-3;
+}
