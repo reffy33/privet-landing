@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cn from "../../../../utils/tailwindMerge";
 
 export default function UniForm() {
   const [name, setName] = useState("");
@@ -16,8 +17,8 @@ export default function UniForm() {
   return (
     <div className="flex justify-center">
       <form onSubmit={handleSubmit}>
-        <div className="bg-white px-10 py-15 rounded-2xl space-y-9 ">
-          <div className="space-y-6 w-90">
+        <div className={cn("form-wrapper", isSuccess ? "form-success" : "")}>
+          <div className="form-inputs">
             <div className="input-group">
               <label htmlFor="name">Имя</label>
               <input

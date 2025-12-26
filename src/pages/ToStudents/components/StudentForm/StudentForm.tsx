@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cn from "../../../../utils/tailwindMerge";
 
 export default function StudentForm() {
   const [name, setName] = useState("");
@@ -14,6 +15,7 @@ export default function StudentForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     clearErrors();
+    setSuccess(false);
 
     const nameValid = validateName();
     const emailValid = validateEmail();
@@ -104,7 +106,7 @@ export default function StudentForm() {
   return (
     <div className="flex justify-center">
       <form onSubmit={handleSubmit}>
-        <div className="form-wrapper">
+        <div className={cn("form-wrapper", isSuccess ? "form-success" : "")}>
           <div className="form-inputs">
             <div className="input-group">
               <label htmlFor="name">Имя</label>

@@ -29,7 +29,10 @@
 }
 
 body,
-a, label {
+p,
+a,
+li,
+label {
   @apply text-black-text text-[28px] max-xl:text-[24px] max-lg:text-[20px] max-md:text-[16px];
 }
 
@@ -38,11 +41,11 @@ a:hover {
 }
 
 h3 {
-  @apply text-black text-[36px] font-semibold;
+  @apply text-black text-[36px] max-xl:text-[30px] max-lg:text-[20px] max-md:text-[16px] font-semibold;
 }
 
 h4 {
-  @apply text-black text-[30px] font-semibold;
+  @apply text-black text-[30px] max-xl:text-[24px] max-lg:text-[20px] max-md:text-[16px] font-semibold;
 }
 
 body {
@@ -51,12 +54,14 @@ body {
   min-height: 100vh;
   background: url("./assets/background.png");
 }
+
 .container {
   @apply max-w-420 m-auto max-[1720px]:px-10 max-lg:px-5;
 }
 
+footer,
 footer a {
-  @apply text-[24px];
+  @apply text-[24px] max-xl:text-[20px] max-lg:text-[20px] max-md:text-[16px];
 }
 
 .input-group {
@@ -94,4 +99,8 @@ button:disabled {
 
 .form-inputs {
   @apply space-y-6 w-90 max-md:w-60;
+}
+
+.form-success {
+  box-shadow: 0 0 4px 0 #00b100;
 }

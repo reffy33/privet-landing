@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white py-10 text-[24px]">
+    <footer className="bg-white py-10 ">
       <div className="container flex max-lg:flex-col gap-9">
         <div className="flex-1">
           <h4>Документы</h4>
