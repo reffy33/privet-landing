@@ -4,6 +4,7 @@
 @theme {
   --color-primary-yellow: #fdd142;
   --color-black-text: #3d3d3d;
+  --color-btn-text: #04061f;
 
   --breakpoint-3xl: 1400px;
   --breakpoint-xl: 1024px;
@@ -64,6 +65,14 @@ footer a {
   @apply text-[24px] max-xl:text-[20px] max-lg:text-[20px] max-md:text-[16px];
 }
 
+.active {
+  @apply font-bold;
+}
+
+.active:hover {
+  @apply no-underline;
+}
+
 .input-group {
   @apply flex flex-col gap-5.5 max-md:gap-3 text-[24px];
 }
@@ -73,11 +82,10 @@ input {
 }
 
 button {
-  @apply rounded-[64px] py-3 w-full text-[20px] max-md:text-[16px] text-[#04061F] bg-primary-yellow;
+  @apply rounded-[64px] py-3 w-full text-[20px] max-md:text-[16px] text-btn-text bg-primary-yellow;
 }
 
-button:hover,
-.btn-secondary:hover {
+button:hover {
   @apply bg-[#dfb93b] cursor-pointer ease-linear duration-300;
 }
 
@@ -86,7 +94,11 @@ button:disabled {
 }
 
 .btn-secondary {
-  @apply bg-white border-2 border-primary-yellow rounded-[64px] py-3 w-full text-[20px] text-[#04061F] text-center;
+  @apply bg-white border-2 border-primary-yellow rounded-[64px] py-3 w-full text-[20px] text-btn-text text-center;
+}
+
+.btn-secondary:hover {
+  @apply bg-primary-yellow text-btn-text no-underline;
 }
 
 .form-error {
