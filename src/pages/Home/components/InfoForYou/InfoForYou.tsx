@@ -16,7 +16,7 @@ export default function InfoForYou() {
         </div>
         <div className="w-112.5 flex flex-col gap-10 justify-center items-center">
           <img src={managers} alt="" />
-          <NavLink className="btn-secondary" to="/students">
+          <NavLink className="btn-secondary" to="/universities">
             Менеджерам вузов ↗
           </NavLink>
         </div>
