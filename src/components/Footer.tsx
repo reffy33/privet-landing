@@ -6,13 +6,13 @@ export default function Footer() {
           <h4>Документы</h4>
           <ul className="mt-6 space-y-4">
             <li>
-              <a href="docs/Политика конфиденциальности.docx" target="_blank">Политика конфиденциальности</a>
+              <a href="html/Политика конфиденциальности.html" target="_blank">Политика конфиденциальности</a>
             </li>
             <li>
-              <a href="docs/Пользовательское соглашение.docx">Пользовательское соглашение</a>
+              <a href="html/Пользовательское-соглашение.html" target="_blank">Пользовательское соглашение</a>
             </li>
             <li>
-              <a href="docs/Оферта.docx">Оферта</a>
+              <a href="html/Оферта.html" target="_blank">Оферта</a>
             </li>
           </ul>
         </div>
