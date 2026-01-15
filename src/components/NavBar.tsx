@@ -14,10 +14,7 @@ export default function NavBar() {
         <div className="container">
           <ul className="flex gap-10 justify-end items-center text-black-text py-8 max-xl:py-6 max-md:py-4">
             <li>
-              <NavLink to="/">Главная</NavLink>
-            </li>
-            <li>
-              <NavLink to="/students">Студентам</NavLink>
+              <NavLink to="/">Студентам</NavLink>
             </li>
             <li>
               <NavLink to="/universities">Вузам</NavLink>

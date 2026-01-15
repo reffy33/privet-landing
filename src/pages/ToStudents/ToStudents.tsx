@@ -1,7 +1,7 @@
 import HomeBanner from "../../components/HomeBanner";
 import AppInYourLanguage from "./components/AppInYourLanguage/AppInYourLanguage";
 import EasyLegalization from "./components/EasyLegalization/EasyLegalization";
-import StudentForm from "./components/StudentForm/StudentForm";
+import Pricing from "./components/Pricing/Pricing";
 
 export default function ToStudents() {
   return (
@@ -9,7 +9,7 @@ export default function ToStudents() {
       <HomeBanner />
       <EasyLegalization />
       <AppInYourLanguage />
-      <StudentForm />
+      <Pricing />
     </>
   );
 }

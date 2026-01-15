@@ -1,5 +1,4 @@
 import UniBlock from "./components/UniBlock/UniBlock";
-import UniForm from "./components/UniForm/UniForm";
 import resourses from "./ToUniversities.data";
 
 export default function ToUniversities() {
@@ -21,7 +20,6 @@ export default function ToUniversities() {
           <UniBlock.Image src={item.image} />
         </UniBlock>
       ))}
-      <UniForm />
     </>
   );
 }
